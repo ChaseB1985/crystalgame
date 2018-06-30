@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>The Crystal Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+   integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel ="stylesheet" type="text/css" href="assets/script/style.css">
+</head>
+
+<body>
+    
+    <div class ="row bg-danger col-8 centerText">
+        <h1>Crystal game!</h1>
+
+    </div>
+    <br></br>
+    <div class="container">
+        <div class ="row bg-info col-6">
+                <p>
+                <li>    You will be given a random number at the start of 
+                    the game.
+                </li>
+                <li>  There are four crystals below. By clicking on a crystal
+                    you will add a specific amount of points to Your
+                    total score. 
+                </li> 
+                <li>    You win the game by matching your total score to random
+                    number, you lose the game if your total score goes 
+                    above the random number.
+                </li>
+                <li>   The value of each crystal is hidden from you until you 
+                    click on it.
+                </li>
+                <li> Each time when the game starts, the game will change the 
+                    values of each crystal.
+                </li>  
+                </p>
+        </div>
+<br></br>
+
+            <div class="row col-3 bg-warning">
+                    <div>
+                    <h1>Score count </h1>
+                    </div>
+                
+            </div>
+
+        
+        <br></br>
+        <div class = "row col-3 bg-scondary" id="targetNum">
+            <div class="winsAndLosses">
+                <h2>Wins:
+                    <span id= "numberWins"></span>
+                    </br>
+                    Losses: 
+                    <span id= "numberLosses"></span>
+                </h2>  
+        </div>
+    </div>    
+                        
+                
+    <div class = "row">
+            <div class = "col-3">
+                <img src = "assets/images/blucrystal.png" id="sapphire" class="crystal">
+                <button class = "btn">sapphire
+            </div>
+            <div class = "col-3">
+                <img src = "assets/images/emrald.png" id="emrald" class="crystal">
+                <button class = "btn">crystal
+            </div>
+            <div class = "col-3">
+                <img src ="assets/images/redcrystal.png" id="ruby" class="crystal">
+                <button class = "btn">ruby
+            </div>
+            <div class = "col-3">
+                <img src = "assets/images/diamond.jpg" id="diamond" class="crystal">
+                <button class = "btn">diamond
+            </div>
+    </div>
+      <!-- score box-->
+                <br></br>
+    <div class="container">
+                    <div class="row col-3 bg-success">                                
+                        <h1>Your total score is:</h1>                           
+                    </div> 
+                </br>
+                    <div class= "row col-3 bg-success" id="endScore">
+                        <h2>00</h2>
+                    </div>
+    </div>
+
+    
+    
+
+
+
+
+
+</body>
+
+<footer>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src= "assets/js/game.js"></script>
+</footer>
